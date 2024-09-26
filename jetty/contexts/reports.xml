@@ -11,7 +11,7 @@ to serve static html,pdf files.
 <Configure class="org.mortbay.jetty.handler.ContextHandler">
     <Call class="org.mortbay.log.Log" name="debug"><Arg>Configure reports.xml</Arg></Call>
     <Set name="contextPath">/reports</Set>
-    <Set name="resourceBase">@reportsHome@/</Set>
+    <Set name="resourceBase">reports/</Set>
     <Call name="addHandler">
 	<Arg>
 	    <New class="org.mortbay.jetty.handler.ResourceHandler"/>
